@@ -1,0 +1,13 @@
+- hosts: all
+  remote_user: root
+  become: yes
+  vars:
+  tasks:
+    - name: Ping the server
+      ping:
+    - name: Configure / Update yum packages
+      yum: name='*' state=latest update_cache=yes
+    - name: Install Docker
+      yum: name='docker' state=latest
+    - name: Enable Docker service
+      service: name=docker state=started enabled=yes
