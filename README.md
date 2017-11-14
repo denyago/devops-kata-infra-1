@@ -1,4 +1,4 @@
-# Solution for DevOps Kata, Kata 1
+# Solution for the [DevOps Kata, Kata 1](https://devops-kata.github.io/)
 
 * Provisions a server image with Packer and Ansible
 * Creates an AWS infra with Terraform
